@@ -6,7 +6,7 @@
 <style>
   body {
     margin: 0; padding: 10px;
-    background: #000080;
+    background: #000000;
     background-image:
       radial-gradient(#ffffff 1px, transparent 1px),
       radial-gradient(#9999ff 1px, transparent 1px);
@@ -49,8 +49,6 @@
   <tr>
     <td colspan="2" class="banner">
       <h1>~*~ Welcome to <span style="color:#0ff">My Homepage</span> ~*~</h1>
-      <div></div>
-      <div class="rainbow"></div>
     </td>
   </tr>
 
@@ -69,11 +67,6 @@
       <a href="#stuff">&gt; Cool Stuff</a>
       <a href="#links">&gt; Links</a>
       <a href="#guest">&gt; Guestbook</a>
-      <hr>
-      <div class="center small">
-        You are visitor number<br>
-        <span class="counter" id="count">000042</span>
-      </div>
       <hr>
       <div class="center small">
         Last updated:<br><span id="upd"></span>
@@ -139,10 +132,6 @@
 </table>
 
 <script>
-  // fake visitor counter that ticks up per browser
-  var n = 42;
-  try { n = (parseInt(localStorage.getItem('v') || '41', 10)) + 1; localStorage.setItem('v', n); } catch (e) {}
-  document.getElementById('count').textContent = ('000000' + n).slice(-6);
   document.getElementById('upd').textContent = new Date().toLocaleDateString('en-GB');
 </script>
 </body>

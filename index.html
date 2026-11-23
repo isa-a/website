@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>~*~ Welcome to my website! ~*~</title>
+<title>~*~ Welcome to My Homepage!! ~*~</title>
 <style>
   body {
     margin: 0; padding: 10px;
@@ -13,8 +13,8 @@
     background-size: 40px 40px, 25px 25px;
     background-position: 0 0, 12px 17px;
     color: #ffff00;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 16px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
     cursor: crosshair;
   }
   a:link { color: #00ffff; }
@@ -24,13 +24,13 @@
     border: 4px ridge #ffffff; border-spacing: 4px; }
   td { vertical-align: top; padding: 8px; }
   .banner { background: url('trees.png') center / cover no-repeat; color: #0f0; text-align: center; border: 3px groove #888;
-    font-family: "Courier New", monospace; }
+    font-family: Verdana, Arial, sans-serif; }
   .banner h1 { margin: 6px 0; font-size: 34px; color: #ff0; text-shadow: 3px 3px #f0f, -1px -1px #0ff; }
   .rainbow { background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta); height: 6px; }
   .nav { background: #000080; color: #fff; width: 170px; border: 3px outset #fff; }
   .nav a { display: block; padding: 3px 0; font-weight: bold; }
   .box { background: #fff; border: 2px inset #888; padding: 8px; margin-bottom: 8px; }
-  h2 { font-family: "Times New Roman", serif; color: #800000; border-bottom: 2px dotted #800000; margin: 0 0 6px; font-size: 22px; }
+  h2 { font-family: Verdana, Arial, sans-serif; color: #800000; border-bottom: 2px dotted #800000; margin: 0 0 6px; font-size: 16px; }
   .blink { animation: blink 1s steps(2, start) infinite; }
   @keyframes blink { to { visibility: hidden; } }
   .counter { background: #000; color: #0f0; font-family: "Courier New", monospace; padding: 2px 6px;
@@ -39,7 +39,7 @@
     font: bold 10px Arial, sans-serif; border: 2px outset #fff; margin: 2px; color: #fff; }
   .small { font-size: 11px; font-family: Verdana, sans-serif; }
   marquee { background: #000; color: #ff0; font-weight: bold; padding: 3px; border: 2px inset #888; }
-  input, textarea { font-family: "Courier New", monospace; }
+  input, textarea { font-family: Verdana, Arial, sans-serif; }
   .center { text-align: center; }
 </style>
 </head>
@@ -54,7 +54,7 @@
 
   <tr>
     <td colspan="2">
-      <marquee scrollamount="5">*** Thanks for visiting!!! Sign my guestbook!!! New page coming soon!!! Please bookmark this site!!! ***</marquee>
+      <marquee scrollamount="5">*** Thanks for visiting!!! New page coming soon!!! Please bookmark this site!!! ***</marquee>
     </td>
   </tr>
 
@@ -65,8 +65,8 @@
       <a href="#home">&gt; Home</a>
       <a href="#about">&gt; About Me</a>
       <a href="#stuff">&gt; Cool Stuff</a>
+      <a href="#contact">&gt; Contact Me</a>
       <a href="#links">&gt; Links</a>
-      <a href="#guest">&gt; Guestbook</a>
       <hr>
       <div class="center small">
         Last updated:<br><span id="upd"></span>
@@ -84,10 +84,6 @@
         <p>Hi and welcome to my corner of the web! My name is <b>Your Name</b> and this is my
         very own homepage. I made it all by myself using Notepad. Make yourself at home and
         look around!</p>
-        <p class="center"><img alt="" width="1" height="1">
-        <span style="font-size:28px">&#9733;</span>
-        <span class="blink" style="color:#f0f;font-size:20px;font-weight:bold;">UNDER CONSTRUCTION</span>
-        <span style="font-size:28px">&#9733;</span></p>
       </div>
 
       <div class="box" id="about">
@@ -109,14 +105,12 @@
         </ul>
       </div>
 
-      <div class="box" id="guest">
-        <h2>Sign My Guestbook!</h2>
-        <form onsubmit="alert('Thanks for signing!! (this is just for show)'); return false;">
-          Name: <input type="text" size="20"><br><br>
-          Message:<br>
-          <textarea rows="3" cols="38"></textarea><br>
-          <input type="submit" value="Sign It!"> <input type="reset" value="Clear">
-        </form>
+      <div class="box" id="contact">
+        <h2>Contact Me</h2>
+        <p>Want to say hi? Send me an e-mail!</p>
+        <p><b>E-mail:</b> <a href="mailto:you@example.com">you@example.com</a><br>
+        <b>GitHub:</b> <a href="https://github.com/your-username">github.com/your-username</a></p>
+        <a href="mailto:you@example.com?subject=Hi from your homepage"><button type="button">Send E-mail</button></a>
       </div>
     </td>
   </tr>

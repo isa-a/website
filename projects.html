@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Isa Ahmad - Photos</title>
+<style>
+  body {
+    margin: 0; padding: 10px;
+    background: #000000;
+    background-image:
+      radial-gradient(#ffffff 1px, transparent 1px),
+      radial-gradient(#9999ff 1px, transparent 1px);
+    background-size: 40px 40px, 25px 25px;
+    background-position: 0 0, 12px 17px;
+    color: #ffff00;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    cursor: crosshair;
+  }
+  a:link { color: #00ffff; }
+  a:visited { color: #ff66ff; }
+  a:hover { color: #ff0000; background: #ffff00; }
+  table.main td:not(.nav) a:link, table.main td:not(.nav) a:visited { color: #00008b; }
+  table.main td:not(.nav) a:hover { color: #ff0000; background: #ffff00; }
+  table.main { width: 760px; margin: 0 auto; background: #c0c0c0; color: #000;
+    border: 4px ridge #ffffff; border-spacing: 4px; }
+  td { vertical-align: top; padding: 8px; }
+  .banner { background: url('banner.jpg') center / cover no-repeat; color: #0f0; text-align: center; border: 3px groove #888;
+    font-family: Verdana, Arial, sans-serif; }
+  .banner h1 { margin: 6px 0; font-size: 34px; color: #000; text-shadow: 2px 2px #fff; }
+  .rainbow { background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta); height: 6px; }
+  .nav { background: #000080; color: #fff; width: 170px; border: 3px outset #fff; }
+  .nav a { display: block; padding: 3px 0; font-weight: bold; }
+  .box { background: #fff; border: 2px inset #888; padding: 8px; margin-bottom: 8px; }
+  h2 { font-family: Verdana, Arial, sans-serif; color: #800000; border-bottom: 2px dotted #800000; margin: 0 0 6px; font-size: 16px; }
+  .blink { animation: blink 1s steps(2, start) infinite; }
+  @keyframes blink { to { visibility: hidden; } }
+  .counter { background: #000; color: #0f0; font-family: "Courier New", monospace; padding: 2px 6px;
+    letter-spacing: 3px; border: 2px inset #888; display: inline-block; }
+  .btn88 { display: inline-block; width: 88px; height: 31px; line-height: 31px; text-align: center;
+    font: bold 10px Arial, sans-serif; border: 2px outset #fff; margin: 2px; color: #fff; }
+  .small { font-size: 11px; font-family: Verdana, sans-serif; }
+  marquee { background: #000; color: #ff0; font-weight: bold; padding: 3px; border: 2px inset #888; }
+  input, textarea { font-family: Verdana, Arial, sans-serif; }
+  .center { text-align: center; }
+
+  .embed-wrap { text-align: center; margin: 10px 0; }
+  .embed-wrap iframe { border: 3px ridge #fff; max-width: 100%; }
+  .tracks { margin: 6px 0 0 20px; padding: 0; }
+</style>
+</head>
+<body>
+
+<table class="main">
+  <tr>
+    <td colspan="2" class="banner">
+      <h1>My <span>Projects</span></h1>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nav">
+      <div class="center"><b>:: MENU ::</b></div>
+      <hr>
+      <a href="index.html">&gt; Home</a>
+      <a href="index.html#about">&gt; About Me</a>
+      <a href="projects.html">&gt; Projects</a>
+      <a href="photos.html">&gt; Photos</a>
+      <a href="index.html#contact">&gt; Contact Me</a>
+    </td>
+
+    <td>
+      <div class="box">
+        <h2>0906 Industries</h2>
+        <p>Have a listen! <a href="index.html">&lt;&lt; Back to home</a></p>
+        <div class="embed-wrap">
+          <iframe style="border: 0; width: 350px; height: 470px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2841447529/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+            seamless>
+            <a href="https://sunsetgrid.bandcamp.com/album/0906-industries">0906 Industries on Bandcamp</a>
+          </iframe>
+        </div>
+        <p class="center"><a href="https://sunsetgrid.bandcamp.com/album/0906-industries">Open on Bandcamp</a></p>
+        <b>Tracklist:</b>
+        <ol class="tracks">
+          <li>Ida Lupino</li>
+          <li>Fudge Liquor</li>
+          <li>FamilyMart</li>
+          <li>Silk Garter</li>
+          <li>Orange Truffles</li>
+          <li>Blackcurrant Syrup</li>
+          <li>Call Northside 777</li>
+        </ol>
+      </div>
+
+      <div class="box">
+        <h2>More Projects</h2>
+        <p>More coming soon!!</p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="center small">
+      <p>&copy; 2003 Your Name. All rights reserved.</p>
+      <a href="index.html">Back to home</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

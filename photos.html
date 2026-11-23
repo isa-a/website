@@ -47,6 +47,16 @@
   .photo-grid img, .ph { width: 190px; height: 140px; object-fit: cover; border: 3px ridge #fff; background: #ddd; }
   .ph { display: block; margin: 0 auto; line-height: 140px; color: #666; }
   .cap { margin-top: 6px; font-size: 11px; }
+
+  .photo-grid img { cursor: zoom-in; }
+  #lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.92); z-index: 1000; cursor: zoom-out;
+    align-items: center; justify-content: center; flex-direction: column; }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 95vw; max-height: 88vh; width: auto; height: auto; object-fit: contain;
+    border: 4px ridge #fff; background: #000; }
+  #lightbox .lb-cap { color: #ffff00; margin-top: 10px; font-size: 13px; text-align: center; max-width: 90vw; }
+  #lightbox .lb-close { color: #fff; margin-top: 6px; font-size: 11px; }
 </style>
 </head>
 <body>
@@ -121,6 +131,32 @@
     </td>
   </tr>
 </table>
+
+<div id="lightbox">
+  <img id="lb-img" src="" alt="">
+  <div class="lb-cap" id="lb-cap"></div>
+  <div class="lb-close">(click anywhere or press Esc to close)</div>
+</div>
+
+<script>
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbCap = document.getElementById('lb-cap');
+  var imgs = document.querySelectorAll('.photo-grid img');
+  for (var i = 0; i < imgs.length; i++) {
+    imgs[i].addEventListener('click', function () {
+      lbImg.src = this.src;
+      lbImg.alt = this.alt;
+      var cap = this.parentNode.querySelector('.cap');
+      lbCap.textContent = cap ? cap.textContent : '';
+      lb.className = 'open';
+    });
+  }
+  lb.addEventListener('click', function () { lb.className = ''; lbImg.src = ''; });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { lb.className = ''; lbImg.src = ''; }
+  });
+</script>
 
 </body>
 </html>

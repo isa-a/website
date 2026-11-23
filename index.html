@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>~*~ Welcome to My Homepage!! ~*~</title>
+<style>
+  body {
+    margin: 0; padding: 10px;
+    background: #000080;
+    background-image:
+      radial-gradient(#ffffff 1px, transparent 1px),
+      radial-gradient(#9999ff 1px, transparent 1px);
+    background-size: 40px 40px, 25px 25px;
+    background-position: 0 0, 12px 17px;
+    color: #ffff00;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 16px;
+    cursor: crosshair;
+  }
+  a:link { color: #00ffff; }
+  a:visited { color: #ff66ff; }
+  a:hover { color: #ff0000; background: #ffff00; }
+  table.main { width: 760px; margin: 0 auto; background: #c0c0c0; color: #000;
+    border: 4px ridge #ffffff; border-spacing: 4px; }
+  td { vertical-align: top; padding: 8px; }
+  .banner { background: #000; color: #0f0; text-align: center; border: 3px groove #888;
+    font-family: "Courier New", monospace; }
+  .banner h1 { margin: 6px 0; font-size: 34px; color: #ff0; text-shadow: 3px 3px #f0f, -1px -1px #0ff; }
+  .rainbow { background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta); height: 6px; }
+  .nav { background: #000080; color: #fff; width: 170px; border: 3px outset #fff; }
+  .nav a { display: block; padding: 3px 0; font-weight: bold; }
+  .box { background: #fff; border: 2px inset #888; padding: 8px; margin-bottom: 8px; }
+  h2 { font-family: "Times New Roman", serif; color: #800000; border-bottom: 2px dotted #800000; margin: 0 0 6px; font-size: 22px; }
+  .blink { animation: blink 1s steps(2, start) infinite; }
+  @keyframes blink { to { visibility: hidden; } }
+  .counter { background: #000; color: #0f0; font-family: "Courier New", monospace; padding: 2px 6px;
+    letter-spacing: 3px; border: 2px inset #888; display: inline-block; }
+  .btn88 { display: inline-block; width: 88px; height: 31px; line-height: 31px; text-align: center;
+    font: bold 10px Arial, sans-serif; border: 2px outset #fff; margin: 2px; color: #fff; }
+  .small { font-size: 11px; font-family: Verdana, sans-serif; }
+  marquee { background: #000; color: #ff0; font-weight: bold; padding: 3px; border: 2px inset #888; }
+  input, textarea { font-family: "Courier New", monospace; }
+  .center { text-align: center; }
+</style>
+</head>
+<body>
+
+<table class="main">
+  <tr>
+    <td colspan="2" class="banner">
+      <h1>~*~ Welcome to <span style="color:#0ff">My Homepage</span> ~*~</h1>
+      <div>Best viewed in Internet Explorer 6 at 1024x768</div>
+      <div class="rainbow"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      <marquee scrollamount="5">*** Thanks for visiting!!! Sign my guestbook!!! New page coming soon!!! Please bookmark this site!!! ***</marquee>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nav">
+      <div class="center"><b>:: MENU ::</b></div>
+      <hr>
+      <a href="#home">&gt; Home</a>
+      <a href="#about">&gt; About Me</a>
+      <a href="#stuff">&gt; Cool Stuff</a>
+      <a href="#links">&gt; Links</a>
+      <a href="#guest">&gt; Guestbook</a>
+      <hr>
+      <div class="center small">
+        You are visitor number<br>
+        <span class="counter" id="count">000042</span>
+      </div>
+      <hr>
+      <div class="center small">
+        Last updated:<br><span id="upd"></span>
+      </div>
+      <hr>
+      <div class="center">
+        <span class="blink" style="color:#f00;font-weight:bold;">NEW!</span><br>
+        <span class="small">Added a links page!</span>
+      </div>
+    </td>
+
+    <td>
+      <div class="box" id="home">
+        <h2>Welcome!!</h2>
+        <p>Hi and welcome to my corner of the web! My name is <b>Your Name</b> and this is my
+        very own homepage. I made it all by myself using Notepad. Make yourself at home and
+        look around!</p>
+        <p class="center"><img alt="" width="1" height="1">
+        <span style="font-size:28px">&#9733;</span>
+        <span class="blink" style="color:#f0f;font-size:20px;font-weight:bold;">UNDER CONSTRUCTION</span>
+        <span style="font-size:28px">&#9733;</span></p>
+      </div>
+
+      <div class="box" id="about">
+        <h2>About Me</h2>
+        <p><b>Name:</b> Your Name<br>
+        <b>Location:</b> Somewhere on Earth<br>
+        <b>Hobbies:</b> Computers, music, movies, hanging out with friends<br>
+        <b>Favorite band:</b> (put yours here!!)<br>
+        <b>Currently listening to:</b> my CD collection</p>
+      </div>
+
+      <div class="box" id="stuff">
+        <h2>Cool Stuff</h2>
+        <ul>
+          <li><a href="#">My Photo Album</a> <span class="blink" style="color:red">*NEW*</span></li>
+          <li><a href="#">My Projects</a></li>
+          <li><a href="#">Funny Pictures</a></li>
+          <li><a href="#">Favorite Downloads</a></li>
+        </ul>
+      </div>
+
+      <div class="box" id="links">
+        <h2>Links</h2>
+        <p><a href="https://github.com/your-username">My GitHub</a> |
+        <a href="mailto:you@example.com">E-mail me!</a> |
+        <a href="#">Webring</a></p>
+        <div class="center">
+          <span class="btn88" style="background:#c00">GET FIREFOX</span>
+          <span class="btn88" style="background:#080">MADE W/ NOTEPAD</span>
+          <span class="btn88" style="background:#00c">WINAMP</span>
+          <span class="btn88" style="background:#808">NO FRAMES</span>
+        </div>
+      </div>
+
+      <div class="box" id="guest">
+        <h2>Sign My Guestbook!</h2>
+        <form onsubmit="alert('Thanks for signing!! (this is just for show)'); return false;">
+          Name: <input type="text" size="20"><br><br>
+          Message:<br>
+          <textarea rows="3" cols="38"></textarea><br>
+          <input type="submit" value="Sign It!"> <input type="reset" value="Clear">
+        </form>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="center small">
+      <div class="rainbow"></div>
+      <p>&copy; 2003 Your Name. All rights reserved.<br>
+      This page is not affiliated with anyone. Please don't steal my graphics!</p>
+      <a href="mailto:you@example.com">Webmaster</a>
+    </td>
+  </tr>
+</table>
+
+<script>
+  // fake visitor counter that ticks up per browser
+  var n = 42;
+  try { n = (parseInt(localStorage.getItem('v') || '41', 10)) + 1; localStorage.setItem('v', n); } catch (e) {}
+  document.getElementById('count').textContent = ('000000' + n).slice(-6);
+  document.getElementById('upd').textContent = new Date().toLocaleDateString('en-GB');
+</script>
+</body>
+</html>

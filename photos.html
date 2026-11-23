@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Isa Ahmad - Photos</title>
+<style>
+  body {
+    margin: 0; padding: 10px;
+    background: #000000;
+    background-image:
+      radial-gradient(#ffffff 1px, transparent 1px),
+      radial-gradient(#9999ff 1px, transparent 1px);
+    background-size: 40px 40px, 25px 25px;
+    background-position: 0 0, 12px 17px;
+    color: #ffff00;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    cursor: crosshair;
+  }
+  a:link { color: #00ffff; }
+  a:visited { color: #ff66ff; }
+  a:hover { color: #ff0000; background: #ffff00; }
+  table.main { width: 760px; margin: 0 auto; background: #c0c0c0; color: #000;
+    border: 4px ridge #ffffff; border-spacing: 4px; }
+  td { vertical-align: top; padding: 8px; }
+  .banner { background: url('trees.png') center / cover no-repeat; color: #0f0; text-align: center; border: 3px groove #888;
+    font-family: Verdana, Arial, sans-serif; }
+  .banner h1 { margin: 6px 0; font-size: 34px; color: #000; text-shadow: 2px 2px #fff; }
+  .rainbow { background: linear-gradient(90deg, red, orange, yellow, lime, cyan, blue, magenta); height: 6px; }
+  .nav { background: #000080; color: #fff; width: 170px; border: 3px outset #fff; }
+  .nav a { display: block; padding: 3px 0; font-weight: bold; }
+  .box { background: #fff; border: 2px inset #888; padding: 8px; margin-bottom: 8px; }
+  h2 { font-family: Verdana, Arial, sans-serif; color: #800000; border-bottom: 2px dotted #800000; margin: 0 0 6px; font-size: 16px; }
+  .blink { animation: blink 1s steps(2, start) infinite; }
+  @keyframes blink { to { visibility: hidden; } }
+  .counter { background: #000; color: #0f0; font-family: "Courier New", monospace; padding: 2px 6px;
+    letter-spacing: 3px; border: 2px inset #888; display: inline-block; }
+  .btn88 { display: inline-block; width: 88px; height: 31px; line-height: 31px; text-align: center;
+    font: bold 10px Arial, sans-serif; border: 2px outset #fff; margin: 2px; color: #fff; }
+  .small { font-size: 11px; font-family: Verdana, sans-serif; }
+  marquee { background: #000; color: #ff0; font-weight: bold; padding: 3px; border: 2px inset #888; }
+  input, textarea { font-family: Verdana, Arial, sans-serif; }
+  .center { text-align: center; }
+
+  .photo-grid { width: 100%; border-spacing: 8px; }
+  .photo-grid td { width: 33%; text-align: center; background: #fff; border: 2px inset #888; padding: 8px; }
+  .photo-grid img, .ph { width: 190px; height: 140px; object-fit: cover; border: 3px ridge #fff; background: #ddd; }
+  .ph { display: block; margin: 0 auto; line-height: 140px; color: #666; }
+  .cap { margin-top: 6px; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<table class="main">
+  <tr>
+    <td colspan="2" class="banner">
+      <h1>My <span>Photos</span></h1>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="nav">
+      <div class="center"><b>:: MENU ::</b></div>
+      <hr>
+      <a href="index.html">&gt; Home</a>
+      <a href="index.html#about">&gt; About Me</a>
+      <a href="photos.html">&gt; Photos</a>
+      <a href="index.html#contact">&gt; Contact Me</a>
+    </td>
+
+    <td>
+      <div class="box">
+        <h2>Photo Album</h2>
+        <p>Here are some pictures! <a href="index.html">&lt;&lt; Back to home</a></p>
+        <table class="photo-grid">
+      <tr>
+        <td>
+          <!-- TO ADD A PHOTO: delete the "ph" line below and use the img line instead -->
+          <!-- <img src="photos/photo1.jpg" alt="Photo 1"> -->
+          <div class="ph">Photo 1</div>
+          <div class="cap">Caption for photo 1</div>
+        </td>
+        <td>
+          <!-- TO ADD A PHOTO: delete the "ph" line below and use the img line instead -->
+          <!-- <img src="photos/photo2.jpg" alt="Photo 2"> -->
+          <div class="ph">Photo 2</div>
+          <div class="cap">Caption for photo 2</div>
+        </td>
+        <td>
+          <!-- TO ADD A PHOTO: delete the "ph" line below and use the img line instead -->
+          <!-- <img src="photos/photo3.jpg" alt="Photo 3"> -->
+          <div class="ph">Photo 3</div>
+          <div class="cap">Caption for photo 3</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- TO ADD A PHOTO: delete the "ph" line below and use the img line instead -->
+          <!-- <img src="photos/photo4.jpg" alt="Photo 4"> -->
+          <div class="ph">Photo 4</div>
+          <div class="cap">Caption for photo 4</div>
+        </td>
+        <td>
+          <!-- TO ADD A PHOTO: delete the "ph" line below and use the img line instead -->
+          <!-- <img src="photos/photo5.jpg" alt="Photo 5"> -->
+          <div class="ph">Photo 5</div>
+          <div class="cap">Caption for photo 5</div>
+        </td>
+        <td>
+          <!-- TO ADD A PHOTO: delete the "ph" line below and use the img line instead -->
+          <!-- <img src="photos/photo6.jpg" alt="Photo 6"> -->
+          <div class="ph">Photo 6</div>
+          <div class="cap">Caption for photo 6</div>
+        </td>
+      </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="center small">
+      <p>&copy; 2003 Your Name. All rights reserved.</p>
+      <a href="index.html">Back to home</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
